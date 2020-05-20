@@ -7,7 +7,8 @@ var achievementSeeder = require('../app/achievementsSeeder');
     "use strict";
     let connection = mongoose.connection,
         connected = false;
-    mongoose.connect(process.env.MONGOOSE_MLAB_URI || 'mongodb://sandboxUser:huiokj@ds011880.mlab.com:11880/quizzessandbox');
+    // mongoose.connect(process.env.MONGOOSE_MLAB_URI || 'mongodb://sandboxUser:huiokj@ds011880.mlab.com:11880/quizzessandbox');
+    mongoose.connect(process.env.MONGOOSE_MLAB_URI || 'mongodb+srv://sandboxUser:huiokj@cluster0-vk6pd.gcp.mongodb.net/test');
     connection.once('open', function() {
         console.log("database connection:");
         mongoose.connection.db.dropCollection('achievements', function(err, result) {});
