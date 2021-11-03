@@ -35,7 +35,7 @@
     "passport-twitter": "^1.0.4",
     "pg": "^4.5.1",
     "redis": "^2.5.1",
-    "validator": "^5.1.0"
+    "validator": "^13.7.0"
   },
   "engines": {
     "node": "4.0.0"
